@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pocket Option - надійний бінарний опціон брокер з високими прибутками та швидкими виплатами">
+    <title>Pocket Option - Торговля бінарними опціонами</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="trading-charts-bg"></div>
+    <canvas id="tradingChart" class="trading-chart"></canvas>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Pocket Option</h1>
+                <p class="tagline">Професійна торгівля опціонами</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title">Торгуйте бінарними опціонами з Pocket Option</h2>
+                <p class="hero-subtitle">Надійний брокер з високими прибутками та миттєвими виплатами</p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Швидкі виплати</h3>
+                        <p>Виведення коштів протягом 24 годин</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Мобільний додаток</h3>
+                        <p>Торгуйте з будь-якого пристрою</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💎</div>
+                        <h3>Високий прибуток</h3>
+                        <p>До 95% від суми інвестиції</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Безпека</h3>
+                        <p>Ліцензований брокер</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bonus-section">
+            <div class="container">
+                <div class="bonus-card">
+                    <h2 class="bonus-title">Спеціальна пропозиція</h2>
+                    <p class="bonus-text">Отримайте ексклюзивний бонус при реєстрації</p>
+                    <div class="promo-code">
+                        <span class="promo-label">Промокод:</span>
+                        <span class="promo-value" id="promoCode">FRIENDTHW77W5MLT</span>
+                        <button class="copy-btn" onclick="copyPromoCode()">Копіювати</button>
+                    </div>
+                    <p class="bonus-info">Введіть промокод під час реєстрації, щоб отримати додаткові переваги</p>
+                    <a href="https://pocket-friends.co/r/thw77w5mlt" class="cta-button" target="_blank" rel="noopener noreferrer">
+                        <span class="cta-text">Почати торгівлю зараз</span>
+                        <span class="cta-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="container">
+                <h2>Чому обирають Pocket Option?</h2>
+                <div class="info-grid">
+                    <div class="info-item hex-info-item">
+                        <div class="hex-wrapper">
+                            <svg class="hex-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <div class="hex-content">
+                                <h3>Легка реєстрація</h3>
+                                <p>Процес реєстрації займає всього кілька хвилин. Почніть торгівлю одразу після верифікації.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-item hex-info-item">
+                        <div class="hex-wrapper">
+                            <svg class="hex-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <div class="hex-content">
+                                <h3>Мінімальний депозит</h3>
+                                <p>Почніть торгівлю з мінімальною сумою. Доступ до ринку для кожного.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-item hex-info-item">
+                        <div class="hex-wrapper">
+                            <svg class="hex-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <div class="hex-content">
+                                <h3>Навчальні матеріали</h3>
+                                <p>Отримайте доступ до відео-уроків та інструкцій для початківців.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-item hex-info-item">
+                        <div class="hex-wrapper">
+                            <svg class="hex-border" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <div class="hex-content">
+                                <h3>Демо-рахунок</h3>
+                                <p>Потренуйтеся на безкоштовному демо-рахунку перед реальною торгівлею.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Pocket Option. Всі права захищені.</p>
+            <p class="disclaimer">Торгівля бінарними опціонами пов'язана з ризиками. Інвестуйте лише ті кошти, втрату яких можете дозволити собі.</p>
+        </div>
+    </footer>
+
+    <div id="copyNotification" class="notification">Промокод скопійовано!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
